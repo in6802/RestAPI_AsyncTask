@@ -48,8 +48,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-
-
     class OpenWeatherAPITASK extends AsyncTask<String, Void, String>{
 
         @Override
@@ -77,7 +75,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             return weather;
         }
-
-
     }
 }
+
+/*
+
+- Rest API
+변하는 값을 가져올 떄
+
+1. 라이센스 받기
+https://home.openweathermap.org/ 에 가입하기
+
+2. 보내는 방법
+API Keys - create key
+example url 복사
+주소 ? 인자1 = city & 인자2 = appid ?
+
+3. 받는 방법법인자를 보내고 받을 때 파라미터로 날아옴.
+파라미터는 스트링이고 계층구조임.
+JSON을 보통 사용
+
+- Android Wrapper Thread - Async Task
+aTask.execute()
+doinBackground()
+onPostExcuted()
+
+ */
